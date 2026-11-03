@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"> <!-- 增加点内边距，不那么靠边 -->
+
+    <!-- 新增的返回按钮 -->
+    <Button
+        android:id="@+id/btn_back_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回上一级"
+        android:layout_gravity="start" /> <!-- 靠左对齐 -->
+
+    <!-- 为了不让内容全挤在上面，加个占位权重，把下面的内容往下挤一点 -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_checkout_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="合计：¥0.0"/>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认支付"
+        android:layout_marginTop="50dp"/>
+
+    <!-- 底部占位 -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
